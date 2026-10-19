@@ -108,7 +108,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
 
 <main>
 <section class="hero" style="padding:0">
-  <svg class="combs" viewBox="0 0 600 520" aria-hidden="true" id="combs"></svg>
+  <svg class="combs" viewBox="0 0 680 640" aria-hidden="true" id="combs"></svg>
   <div class="wrap">
     <h1>Miód od pszczół, które znamy po imieniu</h1>
     <p>Sześćdziesiąt rodzin pszczelich na Pogórzu Strzyżowskim. Nie mieszamy miodów z różnych zbiorów i nie podgrzewamy ich powyżej temperatury ula.</p>
@@ -175,7 +175,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
   var fills=['#FFE7A3','#FFD15C','#F7B733','#FFF8E6'];
   for(var row=0;row<7;row++){for(var col=0;col<7;col++){
     if(Math.random()<0.18)continue;
-    var cx=col*w+(row%2?w/2:0)+20,cy=row*r*1.5+20,pts=[];
+    var cx=col*w+(row%2?w/2:0)+50,cy=row*r*1.5+50,pts=[];
     for(var k=0;k<6;k++){var a=Math.PI/180*(60*k-30);pts.push((cx+r*Math.cos(a)).toFixed(1)+','+(cy+r*Math.sin(a)).toFixed(1));}
     var p=document.createElementNS(NS,'polygon');p.setAttribute('points',pts.join(' '));p.setAttribute('fill',fills[(row*3+col)%4]);p.setAttribute('stroke','#3A2A0A');p.setAttribute('stroke-width','3');svg.appendChild(p);
   }}
